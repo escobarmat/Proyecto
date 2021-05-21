@@ -1,0 +1,183 @@
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Metal Mania', cursive;
+font-family: 'New Rocker', cursive; */
+/* inicio home */
+body{
+    background-image: url(background/fondo02.jpg);
+    font-family: 'Lato', sans-serif;
+}
+header{
+    padding: 20px 0;
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+header img{
+    border-radius: 50%;
+}
+header h1{
+    padding: 20px;
+    font-weight: 400;
+    color: white;
+    font-size: 50px;
+    font-family: 'Metal Mania', cursive;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+nav{
+    background-color: black;
+    color: #707B7C;
+    border: 2px solid;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'New Rocker', cursive;
+    color: #707B7C;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+    color: white;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    border: #707B7C outset;  
+}
+footer{
+    color: whitesmoke;
+    border-radius: 2px;
+    text-align: center;
+    clear: both;
+    padding: 3em 0;
+    margin-top: 2em;
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 */
+}
+nav ul li a.activo{
+    background-color:rgba(255, 255, 255, 0.3);
+    color: white;
+    border: #707B7C inset;   
+}
+.holder{
+    width: 960px;
+    margin: 0 auto;
+}
+.titulohome{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+}
+.subhome{
+    font-family: 'New Rocker', cursive;
+    color: whitesmoke;
+    margin-top: 50px;
+    text-align: start;
+    background-color: rgba(125,126,125,0.4);
+    font-weight: 300;
+}
+.noticia{
+    width: 45%;
+    background-color: rgba(125,126,125,0.4);
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-left: 10px;
+    border:double black;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+}
+.noticia h3{
+    font-family: 'New Rocker', cursive;
+    color: #9C0001;
+    font-weight: 300;
+    display: block;
+}
+.noticia img{
+    margin-left: 10px;
+    border: 2px solid #641E16;
+}
+.noticia p{
+    color: whitesmoke;
+}
+.columnas{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* fin home */
+/* inicio integrantes */
+.integrantes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.integrante{
+    margin: 20px;
+    background-color: rgba(125,126,125,0.4);
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+    border-radius: 25%;
+}
+.integrante img{
+    border: 2px solid #641E16;
+    border-radius: 50%;
+}
+.integrante h4{
+    color: #9C0001;
+    font-family: 'New Rocker', cursive; 
+}
+.integrante h5{
+    color: #641E16;
+}
+.integrante p{
+    color: whitesmoke;
+}
+main div h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+}
