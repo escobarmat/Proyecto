@@ -6,18 +6,18 @@ font-family: 'New Rocker', cursive; */
 body{
     background-image: url(background/fondo02.jpg);
     font-family: 'Lato', sans-serif;
+    margin-top: 120px;
 }
 header{
-    padding: 3% 0;
+    padding: 20px 0;
     background: rgb(0,0,0); /* Old browsers */
     background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    display: flex;
-    width: 100%;
+    display: none;
 }
-header img{
+/* header img{
     border-radius: 50%;
 }
 header h1{
@@ -31,22 +31,73 @@ header div{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;
+    align-items: center; */
 }
 nav{
     background-color: black;
     color: #707B7C;
     border: 2px solid;
-    display: flex;
-    width: 100%;
+    margin-bottom: 200px;
+
 }
 .movilnav{
+    width: 100%;
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.movilnav h1{
+    font-weight: 400;
+    color: white;
+    font-family: 'Metal Mania', cursive;
+    margin-bottom: 12px;
+}
+#menu{
+    right: 30px;position: fixed;
+    top: 0;
+    color: white;
+    font-size: 20px;
+}
+#menu * { 
+    list-style:none;}
+#menu li{ 
+    line-height:180%;
+}
+#menu li a{
+     text-decoration:none;}
+#menu input[name="list"] {
+    display: none;}
+#menu .interior{
+    display: none;}
+.interior{
+    position: fixed;
+    margin-top: 16px;
+    left:0; 
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.interior li{
+    text-align: center;
+}
+#menu input:checked ~ ul{display: block;}
+#menu:checked{border: 2px solid;}
+.navweb{
     display: none;
 }
 nav ul{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
 }
@@ -96,7 +147,6 @@ nav ul li a.activo{
     border: #707B7C inset;   
 }
 .holder{
-    width: 960px;
     margin: 0 auto;
 }
 .titulohome{
@@ -122,7 +172,7 @@ nav ul li a.activo{
     font-weight: 300;
 }
 .noticia{
-    width: 45%;
+    width: 85%;
     background-color: rgba(125,126,125,0.4);
     margin-top: 30px;
     padding-top: 20px;
@@ -131,6 +181,7 @@ nav ul li a.activo{
     -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
     box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    min-width: 330px;
 }
 .noticia h3{
     font-family: 'New Rocker', cursive;

@@ -7,8 +7,10 @@
     <title>Colgados De La Red</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Metal+Mania&family=New+Rocker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/colgadosdelared.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" media="(min-width:769px)" href="css/colgadosdelared.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/movilcolgados.css">
 </head>
 <body>
     <header>
@@ -18,7 +20,7 @@
         </div>
     </header>
     <nav>
-        <div class="holder">
+        <div class="holder navweb">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a class="activo" href="integrantes.html">Integrantes</a></li>
@@ -28,6 +30,21 @@
                 <li><a href="contacto">Contacto</a></li>
             </ul>
         </div>
+        <div class="movilnav">            
+            <h1>Colgados de la Red</h1>
+            <ul id="menu">
+                <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1"><i class="fas fa-bars"></i></label>
+                    <ul class="interior">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="activo" href="integrantes.html">Integrantes</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="contacto">Contacto</a></li>
+                   </ul>
+                </li>
+             </ul>
+        </div>
     </nav>
     <main class="holder">
         <div>
@@ -35,37 +52,37 @@
         </div>
         <div class="integrantes">
             <div class="integrante">
-                <img src="img/foto07.jpg" alt="vocalista">
+                <img src="img/integrantes/foto01.jpg" alt="vocalista">
                 <h4>Pedro "Indio" Sorini</h4>
                 <h5>Vocalista</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste consectetur, nostrum facilis dolore laborum enim, quasi eum dolor expedita libero quos reiciendis laboriosam id atque qui? Eligendi voluptates molestias corrupti!</p>
             </div>
             <div class="integrante">
-                <img src="img/foto08.jpg" alt="bajista">
+                <img src="img/integrantes/foto02.jpg" alt="bajista">
                 <h4>Ricardo "Cebolla" Dorio</h4>
                 <h5>Bajista</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste consectetur, nostrum facilis dolore laborum enim, quasi eum dolor expedita libero quos reiciendis laboriosam id atque qui? Eligendi voluptates molestias corrupti!</p>
             </div>
             <div class="integrante">
-                <img src="img/foto09.jpg" alt="guitarrista">
+                <img src="img/integrantes/foto03.jpg" alt="guitarrista">
                 <h4>Norberto "Carpa" Carpeloti</h4>
                 <h5>Guitarra Solista</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste consectetur, nostrum facilis dolore laborum enim, quasi eum dolor expedita libero quos reiciendis laboriosam id atque qui? Eligendi voluptates molestias corrupti!</p>
             </div>
             <div class="integrante">
-                <img src="img/foto10.jpg" alt="guitarrista ritmico">
+                <img src="img/integrantes/foto04.jpg" alt="guitarrista ritmico">
                 <h4>Eduardo "Spray" Batistuta</h4>
                 <h5>Guitarra Ritmica</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste consectetur, nostrum facilis dolore laborum enim, quasi eum dolor expedita libero quos reiciendis laboriosam id atque qui? Eligendi voluptates molestias corrupti!</p>
             </div>
             <div class="integrante">
-                <img src="img/foto11.jpg" alt="saxofonista">
+                <img src="img/integrantes/foto05.jpg" alt="saxofonista">
                 <h4>Sergio "Flaco" Nawi</h4>
                 <h5>Saxofon</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste consectetur, nostrum facilis dolore laborum enim, quasi eum dolor expedita libero quos reiciendis laboriosam id atque qui? Eligendi voluptates molestias corrupti!</p>
             </div>
             <div class="integrante">
-                <img src="img/foto12.jpg" alt="baterista">
+                <img src="img/integrantes/foto06.jpg" alt="baterista">
                 <h4>Alberto "Piojo" Sidoti</h4>
                 <h5>Percucion</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste consectetur, nostrum facilis dolore laborum enim, quasi eum dolor expedita libero quos reiciendis laboriosam id atque qui? Eligendi voluptates molestias corrupti!</p>
@@ -75,6 +92,12 @@
     </main>
     <footer>
         <p>Diseñado por Matias Escobar-&copy;2021</p>
+        <ul class="redes">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
     </footer>
 </body>
 </html>
