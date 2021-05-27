@@ -50,6 +50,7 @@ nav{
     position: fixed;
     top: 0;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 200;
 }
 .movilnav h1{
     font-weight: 400;
@@ -189,9 +190,19 @@ nav ul li a.activo{
     font-weight: 300;
     display: block;
 }
-.noticia img{
-    margin-left: 10px;
+.efecto{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;    
     border: 2px solid #641E16;
+    margin-left: 10px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+.noticia img:hover{
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
 }
 .noticia p{
     color: whitesmoke;
@@ -201,7 +212,7 @@ nav ul li a.activo{
     flex-wrap: wrap;
     flex-direction: row;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .left{
     float: left;
@@ -225,10 +236,21 @@ nav ul li a.activo{
     width: 170px;
     text-align: center;
     border-radius: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.integrante img{
+.integrante img:hover{    
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+.efecto1{ 
     border: 2px solid #641E16;
     border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
 }
 .integrante h4{
     color: #9C0001;
