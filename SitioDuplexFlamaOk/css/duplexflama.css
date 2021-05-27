@@ -260,3 +260,61 @@ nav ul li a.activo{
     width: 60%;
 }
 /* fin propiedad */
+
+/* inicio galeria */
+
+
+/* fin galeria */
+
+/* incio empedrado */
+.empedrado{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.empedrado h2{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom:40px;
+    color: #000066;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;
+}
+.empedrado h3{
+    margin: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(240, 230, 140,0.8);
+    padding: 10px;
+    color: #008060; 
+}
+.empedrado p{
+    width: 70%;
+    margin: 30px;
+    margin-bottom: 50px;
+}.caja{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.empimg{
+    width: 700px;
+    height: 393px;
+    border:2px dotted #339966;
+    overflow: hidden;
+}
+.empimg1{
+    width: 265px;
+    height: 393px;
+    border:2px dotted #339966;
+    overflow: hidden;
+}
+.empedrado img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* fin empedrado */
