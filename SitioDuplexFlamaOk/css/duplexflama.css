@@ -1,6 +1,6 @@
 /* font-family: 'Libre Baskerville', serif;
 font-family: 'Newsreader', serif;
-font-family: 'Pattaya', sans-serif; */+
+font-family: 'Pattaya', sans-serif; */
 
 /* inicio home */
 body{
@@ -62,7 +62,7 @@ nav ul{
 .movilnav{
     display: none;
 }
-nav ul li{}
+/* nav ul li{} */
 nav ul li a{
     color: #000066;
     text-decoration: none;

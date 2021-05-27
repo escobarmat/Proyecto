@@ -120,7 +120,7 @@ nav ul{
 .navweb{
     display: none;
 }
-nav ul li{}
+/* nav ul li{} */
 nav ul li a{
     color: #000066;
     text-decoration: none;
@@ -276,6 +276,8 @@ nav ul li a.activo{
 .propiedad p{
     text-align: center;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .argumento{
     display: inline-block;
