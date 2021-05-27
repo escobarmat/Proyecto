@@ -262,9 +262,38 @@ nav ul li a.activo{
 /* fin propiedad */
 
 /* inicio galeria */
-
-
+.galeria h2{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom:40px;
+    color: #000066;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;   
+}
+.fotos{
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.foto{
+    margin: 30px 20px;
+    width: 150px;
+    height: 100px;
+    border: 2px double #339999;
+    overflow: hidden;
+}
+.foto:nth-child(4n+1){
+    border: 4px outset #000066;
+}
+.foto img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
 /* fin galeria */
+
 
 /* incio empedrado */
 .empedrado{
