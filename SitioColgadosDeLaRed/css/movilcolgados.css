@@ -51,6 +51,10 @@ nav{
     top: 0;
     border: 2px solid rgba(255, 255, 255, 0.3);
     z-index: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .movilnav h1{
     font-weight: 400;
@@ -59,8 +63,9 @@ nav{
     margin-bottom: 12px;
 }
 #menu{
-    right: 30px;position: fixed;
-    top: 0;
+    right: 30px;
+    position: fixed;
+    /* top: 0px; */
     color: white;
     font-size: 20px;
 }
@@ -78,7 +83,8 @@ nav{
 .interior{
     position: fixed;
     margin-top: 16px;
-    left:0; 
+    left:0;
+    top: 56px; 
     width: 100%;
     margin-left: 0;
     padding-left: 0;
@@ -277,3 +283,65 @@ main div h2{
     box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
 }
 /* fin integantes */
+
+
+/* inicio historia */
+
+
+/* fin historia */
+
+
+/* inicio galeria */
+.menu{
+    position: fixed;
+    right: 30px;
+    top: 22px;
+}
+.galeria h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px;  
+}
+.carrusel{
+    border: 4px solid #641E16;
+    width: 340px;
+    height: 227px;
+    margin: auto;
+    background-color: rgba(125,126,125,0.4);
+    overflow: hidden;
+}
+.fotos{
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.foto{
+    margin: 30px 20px;
+    background-color: rgba(125,126,125,0.4);
+    border:double black;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+/* .foto:nth-child(4n+1){
+    border: 4px double #9C0001;
+} */
+.foto img:hover, .carousel-item img:hover{
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+/* fin galeria */

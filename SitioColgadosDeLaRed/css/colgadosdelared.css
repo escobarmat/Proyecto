@@ -224,3 +224,60 @@ main div h2{
     box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
 }
 /* fin integantes */
+
+
+/* inicio historia */
+
+
+/* fin historia */
+
+
+/* inicio galeria */
+.galeria h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px;  
+}
+.carrusel{
+    border: 4px solid #641E16;
+    width: 800px;
+    height: 533px;
+    margin: auto;
+    background-color: rgba(125,126,125,0.4);
+    overflow: hidden;
+}
+.fotos{
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.foto{
+    margin: 30px 20px;
+    background-color: rgba(125,126,125,0.4);
+    border:double black;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+.foto:nth-child(4n+1){
+    border: 4px double #9C0001;
+}
+.foto img:hover, .carousel-item img:hover{
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+/* fin galeria */
