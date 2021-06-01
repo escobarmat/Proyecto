@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgados De La Red</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Metal+Mania&family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" media="(min-width:769px)" href="css/colgadosdelared.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/movilcolgados.css">
+</head>
+<body>
+    <header>
+        <div class="holder">
+            <img src="img/home/foto01.jpg" alt="">
+            <h1>Colgados De La Red</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="holder navweb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a class="activo" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="movilnav">            
+            <h1>Colgados de la Red</h1>
+            <ul id="menu">
+                <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1"><i class="fas fa-bars"></i></label>
+                    <ul class="interior">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a class="activo" href="contacto.html">Contacto</a></li>
+                   </ul>
+                </li>
+             </ul>
+        </div>
+    </nav>
+    <main class="holder contacto">
+        <h2>Podes Contactacnos</h2>
+        <div class="medios">
+            <div>
+            <form action="" class="formulario">
+                <h3>Rellenando el Siguiente Formulario</h3>
+                <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre...">
+                </p>
+                <p>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido...">
+                </p>
+                <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su Email..." cols>
+                </p>
+                <p>
+                <label for="comentario">Comentarios:</label>
+                <textarea name="comentario" id="comentario"texto cols="30" rows="10" placeholder="Haga sus comentarios..."></textarea>
+                </p>
+                <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                </p>
+            </form>
+            </div>
+            <div class="otros">
+            <h3>Tambien en nuestras Redes Sociales</h3>
+            <ul>
+                <li><i class="icono fab fa-facebook-square"></i> www.facebook.com/colgadosdelared</li>
+                <li><i class="icono fab fa-instagram"></i> @colgadosdelared</li>
+                <li><i class="icono fab fa-youtube"></i> @colgadosdelaredoficial</li>
+                <li><i class="icono fab fa-twitter"></i> @colgadosdelaredok</li>            
+            </ul>          
+            </div>
+        </div> 
+    </main>
+    <footer>
+        <p>Diseñado por Matias Escobar-&copy;2021</p>
+        <ul class="redes">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

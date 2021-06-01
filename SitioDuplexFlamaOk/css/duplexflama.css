@@ -445,6 +445,9 @@ nav ul li a.activo{
     border-left: 2px solid gray;
     padding-left: 60px;
 }
+.otros ul{
+    padding-left: 0;
+}
 .formulario input[type="submit"],.formulario input[type="reset"]{
     margin: 0 20px;
     background-color: #008060;

@@ -336,12 +336,126 @@ main div h2{
     height: 100px;
     overflow: hidden;
 }
-/* .foto:nth-child(4n+1){
-    border: 4px double #9C0001;
-} */
 .foto img:hover, .carousel-item img:hover{
     transform: scale(1.2);
     filter: sepia(100%);
     transition: 2s;
 }
 /* fin galeria */
+
+
+/* inicio novedades */
+.novedades h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px; 
+}
+.eventos{
+    background-color: rgba(125,126,125,0.4);
+    border:double black;
+    color: whitesmoke;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+/* fin novedades */
+
+
+/* inicio contacto */
+.contacto{
+    margin-bottom: 60px;
+}
+.contacto h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px;
+}
+.medios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(125,126,125,0.4);
+    margin-bottom: 60px;
+} 
+.medios h3{
+    font-family: 'New Rocker', cursive;
+    color: #641E16;
+    font-weight: 300;
+    font-size: 30px;
+}
+.formulario{
+    width: 90%;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.formulario p{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.formulario h3{
+    text-align: center;
+    width: 100%;
+}
+.formulario label{
+    width: 50%;
+}
+.formulario input,.formulario textarea{
+    width: 100%;
+    border-radius:5px;
+    background-color: rgba(156, 0, 1,0.3);
+    color: whitesmoke;
+}
+.otros{
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid gray;
+    padding-top: 30px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+.formulario input[type="submit"],.formulario input[type="reset"]{
+    margin: 0 20px;
+    background-color: #641E16;
+    font-family: 'New Rocker', cursive;
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+}
+.otros ul{
+    padding-left: 0;
+}
+.otros ul li{
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    margin: 10px;
+    margin-top: 20px;
+}
+.icono{
+    font-size: 24px;
+    color: #9C0001;
+}
+/* fin contacto */
