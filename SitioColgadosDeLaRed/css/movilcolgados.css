@@ -179,22 +179,24 @@ nav ul li a.activo{
     font-weight: 300;
 }
 .noticia{
-    width: 85%;
+    width: 90%;
     background-color: rgba(125,126,125,0.4);
     margin-top: 30px;
     padding-top: 20px;
-    margin-left: 10px;
+    margin-left: 2px;
     border:double black;
     -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
     box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
     min-width: 330px;
+    overflow: hidden;
 }
 .noticia h3{
     font-family: 'New Rocker', cursive;
     color: #9C0001;
     font-weight: 300;
     display: block;
+    margin: 10px 30px;
 }
 .efecto{
     width: 300px;
@@ -212,6 +214,7 @@ nav ul li a.activo{
 }
 .noticia p{
     color: whitesmoke;
+    margin: 20px 30px;
 }
 .columnas{
     display: inline-flex;
@@ -315,11 +318,11 @@ main div h2{
 .historia p{
     margin: 30px 10px;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 30px;
 }
 .adentro img{
-    width: 340px;
-    height: 227px;
+    width: 300px;
+    height: 200px;
 }
 .historia img:hover{
     transform: scale(1.2);
@@ -344,10 +347,11 @@ main div h2{
     justify-content: center;
     align-items: center;
     border:double black;
+    overflow: hidden;
 }
 .adentro div div {
-    width: 340px;
-    height: 227px;
+    width: 300px;
+    height: 200px;
     border:double black;
     margin: 20px 10px;
     overflow: hidden;
