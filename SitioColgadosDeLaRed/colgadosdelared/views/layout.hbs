@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgados De La Red</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Metal+Mania&family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="/stylesheets/movilcolgados.css">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" media="(min-width:769px)" href="/stylesheets/colgadosdelared.css">
   </head>
   <body>
+    <header>
+        <div class="holder">
+            <img src="images/home/foto01.jpg" alt="">
+            <h1>Colgados De La Red</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="holder navweb">
+            <ul>
+                <li><a class="{{#if isHome}} activo {{/if}}" href="/">Home</a></li>
+                <li><a class="{{#if isIntegrantes}} activo {{/if}}" href="/integrantes">Integrantes</a></li>
+                <li><a class="{{#if isHistoria}} activo {{/if}}" href="/historia">Historia</a></li>
+                <li><a class="{{#if isGaleria}} activo {{/if}}" href="/galeria">Galeria</a></li>
+                <li><a class="{{#if isNovedades}} activo {{/if}}" href="/novedades">Novedades</a></li>
+                <li><a class="{{#if isContacto}} activo {{/if}}" href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="movilnav">            
+            <h1>Colgados de la Red</h1>
+            <ul id="menu">
+                <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1"><i class="fas fa-bars"></i></label>
+                    <ul class="interior">
+                        <li><a class="{{#if isHome}} activo {{/if}}" href="/">Home</a></li>
+                        <li><a class="{{#if isIntegrantes}} activo {{/if}}" href="/integrantes">Integrantes</a></li>
+                        <li><a class="{{#if isHistoria}} activo {{/if}}" href="/historia">Historia</a></li>
+                        <li><a class="{{#if isGaleria}} activo {{/if}}" href="/galeria">Galeria</a></li>
+                        <li><a class="{{#if isNovedades}} activo {{/if}}" href="/novedades">Novedades</a></li>
+                        <li><a class="{{#if isContacto}} activo {{/if}}" href="/contacto">Contacto</a></li>
+                   </ul>
+                </li>
+             </ul>
+        </div>
+    </nav>
     {{{body}}}
+    <footer>
+        <p>Diseñado por Matias Escobar-&copy;2021</p>
+        <ul class="redes">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
   </body>
 </html>

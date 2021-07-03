@@ -49,6 +49,9 @@ nav ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
 }
 nav ul li a{
     text-decoration: none;

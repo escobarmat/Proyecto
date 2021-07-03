@@ -1,0 +1,44 @@
+<main class="holder contacto">
+        <h2>Podes Contactarnos</h2>
+        <div class="medios">
+            <div>
+            <form action="/contacto" method="POST" class="formulario">
+                <h3>Rellenando el Siguiente Formulario</h3>
+                <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre...">
+                </p>
+                <p>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido...">
+                </p>
+                <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su Email..." cols>
+                </p>
+                <p>
+                <label for="comentario">Comentarios:</label>
+                <textarea name="comentario" id="comentario"texto cols="30" rows="10" placeholder="Haga sus comentarios..."></textarea>
+                </p>
+                <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                </p>
+                <div id="mensaje" class="mensaje">
+                    {{#if message}}<p class="alerta" id="alerta">{{message}}<i onclick="funcion()" class="fas fa-times"></i></p>{{/if}}
+                </div>
+            </form>
+            </div>
+            <div class="otros">
+            <h3>Tambien en nuestras Redes Sociales</h3>
+            <ul>
+                <li><i class="icono fab fa-facebook-square"></i> www.facebook.com/colgadosdelared</li>
+                <li><i class="icono fab fa-instagram"></i> @colgadosdelared</li>
+                <li><i class="icono fab fa-youtube"></i> @colgadosdelaredoficial</li>
+                <li><i class="icono fab fa-twitter"></i> @colgadosdelaredok</li>            
+            </ul>          
+            </div>
+        </div> 
+    </main>
+    <script src="/javascripts/script.js"></script>
+    

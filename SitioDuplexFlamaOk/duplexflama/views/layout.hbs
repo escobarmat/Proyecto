@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplex Flama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Newsreader:wght@300;400;500;600;800&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" media="(min-width:769px)" href="stylesheets/duplexflama.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="stylesheets/movilduplexflama.css">
   </head>
   <body>
+    <header>
+        <div class="holder header">
+            <div class="headimg"><img src="images/home/foto01.jpg" alt="casa"></div>
+            <h1 class="reflejo">Duplex Flama</h1>
+        </div>         
+    </header>
+    <nav>
+        <div class="holder navweb">
+            <ul>
+                <li><a class="{{#if isHome}} activo {{/if}}" href="/">Home</a></li>
+                <li><a class="{{#if isPropiedad}} activo {{/if}}" href="/propiedad">Propiedad</a></li>
+                <li><a class="{{#if isGaleria}} activo {{/if}}" href="/galeria">Galeria</a></li>
+                <li><a class="{{#if isEmpedrado}} activo {{/if}}" href="/empedrado">Empedrado</a></li>
+                <li><a class="{{#if isDisponible}} activo {{/if}}" href="/disponible">Disponible</a></li>                
+                <li><a class="{{#if isContacto}} activo {{/if}}" href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="movilnav">            
+            <h1>Duplex Flama</h1>
+            <ul id="menu">
+                <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1"><i class="fas fa-bars"></i></label>
+                    <ul class="interior">
+                        <li><a class="{{#if isHome}} activo {{/if}}" class="activo" href="/">Home</a></li>
+                        <li><a class="{{#if isPropiedad}} activo {{/if}}" href="/propiedad">Propiedad</a></li>
+                        <li><a class="{{#if isGaleria}} activo {{/if}}" href="/galeria">Galeria</a></li>
+                        <li><a class="{{#if isEmpedrado}} activo {{/if}}" href="/empedrado">Empedrado</a></li>
+                        <li><a class="{{#if isDisponible}} activo {{/if}}" href="/disponible">Disponible</a></li>
+                        <li><a class="{{#if isContacto}} activo {{/if}}" href="/contacto">Contacto</a></li>
+                   </ul>
+                </li>
+             </ul>
+        </div>
+    </nav>
     {{{body}}}
+    <footer>
+        <p>Diseñado por Matias Escobar-&copy;2021</p>
+        <ul class="redes">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

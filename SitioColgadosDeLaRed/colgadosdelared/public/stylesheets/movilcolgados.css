@@ -1,0 +1,574 @@
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Metal Mania', cursive;
+font-family: 'New Rocker', cursive; */
+/* inicio home */
+body{
+    background-image: url(/images/background/fondo02.jpg);
+    font-family: 'Lato', sans-serif;
+    padding-top: 100px;
+}
+header{
+    padding: 20px 0;
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: none;
+}
+/* header img{
+    border-radius: 50%;
+}
+header h1{
+    padding: 20px;
+    font-weight: 400;
+    color: white;
+    font-size: 50px;
+    font-family: 'Metal Mania', cursive;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center; */
+}
+nav{
+    background-color: black;
+    color: #707B7C;
+    border: 2px solid;
+    margin: 0;
+    padding: 0;
+}
+.movilnav{
+    height: 73.44px;
+    max-height: 73.44px;
+    padding: 0;
+    width: 100%;
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin: 0;
+    position: fixed;
+    top: 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.movilnav h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    font-family: 'Metal Mania', cursive;
+    padding: 0;
+    margin: 0;
+    height: 37px;
+}
+#menu{
+    right: 30px;
+    position: fixed;
+    /* top: 0px; */
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+}
+#menu * { 
+    list-style:none;}
+#menu li{ 
+    line-height:180%;
+}
+#menu li a{
+     text-decoration:none;}
+#menu input[name="list"] {
+    display: none;}
+#menu .interior{
+    display: none;}
+.interior{
+    position: fixed;
+    margin-top: 16px;
+    left:0;
+    top: 56px; 
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(25,25,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 22%,rgba(25,25,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.interior li{
+    text-align: center;
+}
+#menu input:checked ~ ul{display: block;}
+#menu:checked{border: 2px solid;}
+.navweb{
+    display: none;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'New Rocker', cursive;
+    color: #707B7C;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+    color: white;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    border: #707B7C outset;  
+}
+footer{
+    color: whitesmoke;
+    border-radius: 2px;
+    text-align: center;
+    clear: both;
+    padding: 3em 0;
+    margin-top: 2em;
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 */
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+.redes li a{    
+    color: #641E16;    
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+}
+nav ul li a.activo{
+    background-color:rgba(255, 255, 255, 0.3);
+    color: white;
+    border: #707B7C inset;   
+}
+.holder{
+    margin: 0 auto;
+}
+.titulohome{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+}
+.subhome{
+    font-family: 'New Rocker', cursive;
+    color: whitesmoke;
+    margin-top: 50px;
+    text-align: start;
+    background-color: rgba(125,126,125,0.4);
+    font-weight: 300;
+}
+.noticia{
+    width: 90%;
+    background-color: rgba(125,126,125,0.4);
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-left: 2px;
+    border:double black;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    min-width: 330px;
+    overflow: hidden;
+}
+.noticia h3{
+    font-family: 'New Rocker', cursive;
+    color: #9C0001;
+    font-weight: 300;
+    display: block;
+    margin: 10px 30px;
+}
+.efecto{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;    
+    border: 2px solid #641E16;
+    margin-left: 10px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+.noticia img:hover{
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+.noticia p{
+    color: whitesmoke;
+    margin: 20px 30px;
+}
+.columnas{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* fin home */
+
+/* inicio integrantes */
+.integrantes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.integrante{
+    margin: 20px;
+    background-color: rgba(125,126,125,0.4);
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+    border-radius: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+}
+.integrante img:hover{    
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+.efecto1{ 
+    border: 2px solid #641E16;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+.integrante h4{
+    color: #9C0001;
+    font-family: 'New Rocker', cursive; 
+}
+.integrante h5{
+    color: #641E16;
+}
+.integrante p{
+    color: whitesmoke;
+}
+main div h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+}
+/* fin integantes */
+
+
+/* inicio historia */
+.historia{
+    color: whitesmoke;
+}
+.historia h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-top: 30px;
+}
+.historia h3{
+    font-family: 'New Rocker', cursive;
+    color: #641E16;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.historia p{
+    margin: 30px 10px;
+    text-align: center;
+    padding: 20px 30px;
+}
+.adentro img{
+    width: 300px;
+    height: 200px;
+}
+.historia img:hover{
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+.caja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.adentro{
+    background-color: rgba(125,126,125,0.4);
+    padding: 10px 20px;
+    width: 90%;
+    margin: 10px;
+    margin-left: 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:double black;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+}
+.adentro div div {
+    width: 300px;
+    height: 200px;
+    border:double black;
+    margin: 20px 10px;
+    overflow: hidden;
+} 
+/* fin historia */
+
+
+/* inicio galeria */
+.menu{
+    position: fixed;
+    right: 30px;
+    top: 22px;
+}
+.galeria h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px;  
+}
+.carrusel{
+    border: 4px solid #641E16;
+    width: 340px;
+    height: 227px;
+    margin: auto;
+    background-color: rgba(125,126,125,0.4);
+    overflow: hidden;
+}
+.fotos{
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.foto{
+    margin: 30px 20px;
+    background-color: rgba(125,126,125,0.4);
+    border:double black;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+.foto img:hover, .carousel-item img:hover{
+    transform: scale(1.2);
+    filter: sepia(100%);
+    transition: 2s;
+}
+/* fin galeria */
+
+
+/* inicio novedades */
+.novedades h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px; 
+}
+.eventos{
+    background-color: rgba(125,126,125,0.4);
+    border:double black;
+    color: whitesmoke;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+/* fin novedades */
+
+
+/* inicio contacto */
+.contacto{
+    margin-bottom: 60px;
+}
+.contacto h2{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px;
+}
+.medios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(125,126,125,0.4);
+    margin-bottom: 60px;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+} 
+.medios h3{
+    font-family: 'New Rocker', cursive;
+    color: #641E16;
+    font-weight: 300;
+    font-size: 30px;
+}
+.formulario{
+    width: 90%;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.formulario p{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.formulario h3{
+    text-align: center;
+    width: 100%;
+}
+.formulario label{
+    width: 50%;
+}
+.formulario input,.formulario textarea{
+    width: 100%;
+    border-radius:5px;
+    background-color: rgba(156, 0, 1,0.3);
+    color: whitesmoke;
+}
+.otros{
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid gray;
+    padding-top: 30px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+.formulario input[type="submit"],.formulario input[type="reset"]{
+    margin: 0 20px;
+    background-color: #641E16;
+    font-family: 'New Rocker', cursive;
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+}
+.otros ul{
+    padding-left: 0;
+}
+.otros ul li{
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    margin: 10px;
+    margin-top: 20px;
+}
+.icono{
+    font-size: 24px;
+    color: #9C0001;
+}
+.mensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.alerta{
+    display: flex;
+    padding: 0;
+    margin: auto;
+    padding: 10px;
+    margin-left: 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    background-color: #641E16;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+}
+/* fin contacto */
