@@ -477,8 +477,9 @@ nav ul li a.activo{
     font-size: 25px; 
 }
 .formulario{
-    padding-left: 30px;
     width: 80%;
+    margin: auto;
+    text-align: center;
 }
 .formulario p{
     display: flex;
@@ -519,5 +520,19 @@ nav ul li a.activo{
 .icono{
     font-size: 24px;
     color: #000066;
+}
+.mensaje{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+.alerta{
+    color: #000066;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;
+    background-color: rgba(240, 230, 140,0.8);
+    padding: 10px;
 }
 /* fin contacto */
