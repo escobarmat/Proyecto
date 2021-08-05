@@ -16,6 +16,23 @@ header{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#191919',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     display: flex;
     width: 100%;
+    overflow: hidden;
+}
+#header{
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0) 49%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0) 51%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0) 49%,rgba(255,255,255,0.25) 50%,rgba(255,255,255,0) 51%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,255,255,0) 49%,rgba(255,255,255,0.25) 50%,rgba(255,255,255,0) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 100px;
+    height: 100px;
+    transform: scale(6,6);
+    /* animation: luz 5s linear 2s infinite normal; */
+    transform: translateX(-1000px);
+    left: -100%;
+}
+@keyframes luz{
+    0%{transform: translateX(-1000px) scale(2,3);}
+    100%{transform: translateX(2000px) scale(3,3);}
 }
 header img{
     border-radius: 50%;
@@ -26,6 +43,7 @@ header h1{
     color: white;
     font-size: 50px;
     font-family: 'Metal Mania', cursive;
+    z-index: 200;
 }
 header div{
     display: flex;

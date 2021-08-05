@@ -5,6 +5,7 @@ font-family: 'Pattaya', sans-serif; */
 /* inicio home */
 body{
     font-family: 'Newsreader', serif;
+    margin-top: 100px;
 }
 header{
     padding: 0;
@@ -45,8 +46,6 @@ header h1{
     -webkit-box-reflect: below 30px -webkit-linear-gradient(transparent,rgb(193, 255, 245));
 } */
 nav{
-    background-color:#66CC99;
-    border:2px solid #339999;
     display: flex;
 }
 nav ul{
@@ -59,6 +58,7 @@ nav ul{
 }
 .movilnav{
     width: 100%;
+    border:2px solid #339999;
     margin-bottom: 30px;
     position: fixed;
     top: 0;
