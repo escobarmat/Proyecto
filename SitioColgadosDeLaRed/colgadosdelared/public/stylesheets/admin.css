@@ -1,0 +1,75 @@
+/* login */
+.formadmin{
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 35px auto;
+    width: 45%;
+    background-color: rgba(125,126,125,0.4);
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1); 
+}
+.formadmin input{
+    width: 100%;
+    border-radius:5px;
+    background-color: rgba(156, 0, 1,0.3);
+    color: whitesmoke;
+}
+.boton{
+    text-align: center;
+}
+.inicio{
+    margin: 20px 30px;
+    background-color: #641E16;
+    font-family: 'New Rocker', cursive;
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+}
+.incorrecto{
+    text-align: center;
+    margin: 10px auto 50px;
+    width: 45%;
+}
+/* fin login */
+
+/* inicio novedades */
+.saludo{
+    display: flex;
+    justify-content: flex-end;
+}
+.panel h3{
+    font-family: 'New Rocker', cursive;
+    color: #641E16;
+    font-weight: 300;
+    font-size: 25px;
+    border-radius: 10%;
+    background-color: rgba(125,126,125,0.4);
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 27px 0px rgba(255,255,255,1);
+    padding: 5px;
+}
+.tituloadmin{
+    font-family: 'Metal Mania', cursive;
+    color: whitesmoke;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    -webkit-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    -moz-box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    box-shadow: -27px -20px 67px 19px rgba(0,0,0,1);
+    margin-bottom: 60px;
+}
+.btn-dark{
+    margin: 0 20px;
+    font-family: 'New Rocker', cursive;
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+}

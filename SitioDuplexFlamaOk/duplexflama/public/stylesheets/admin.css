@@ -1,3 +1,54 @@
-form{
+/* login */
+.formadmin{
     padding-top: 30px;
+    margin: 10px auto;
+    width: 45%; 
+}
+.formadmin input{
+    background-color: rgba(153, 204, 255,0.5);
+}
+.boton{
+    text-align: center;
+}
+.inicio{
+    margin-top: 15px;
+    text-align: center;
+    background-color: #008060;
+    font-family: 'Newsreader', serif;
+    font-weight: 800;
+    color: white;
+    padding: 10px;
+}
+.incorrecto{
+    text-align: center;
+    margin: 10px auto 40px;
+    width: 45%;
+}
+/* fin login */
+
+/* inicio novedades */
+.panel{
+    display: flex;
+    flex-direction: column;
+}
+.panel h3{
+    color: #008060;
+    font-weight: 800;
+    font-size: 25px; 
+    margin: 30px 0;
+}
+.tituloadmin{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom:40px;
+    color: #000066;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;  
+}
+.btn-danger{
+    text-align: center;
+    font-family: 'Newsreader', serif;
+    font-weight: 800;
+    color: white;
+    padding: 10px;
 }
