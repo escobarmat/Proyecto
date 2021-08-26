@@ -3,8 +3,55 @@
         <div class="col panel">
             <h1 class="tituloadmin">Penel De Administracion</h1>
             <div class="saludo">
-                <h3 class="text-end"> Hola {{usuario}}!... <a href="/admin/login/logout" class="btn btn-sm btn-dark">Cerrar Sesión <i class="fa fa-sign-out-alt"></i></a></h3>
-            </div>             
+                <h3 class="text-end"> Hola {{usuario}}!... <a href="/admin/login/logout"
+                        class="btn btn-sm btn-dark">Cerrar Sesión <i class="fa fa-sign-out-alt"></i></a></h3>
+            </div>
+        </div>
+        <div class="row listado mt-5">
+            <div class="col-7">
+                <h3>Listado de Novedades</h3>
+            </div>
+            <div class="col-2 text-end">
+                <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
+            </div>
+            <div class="col-3">
+                <form class="d-flex formagregar" action="/admin/novedades" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Novedad..." aria-label="Search" name="q" {{#if q}} value="{{q}}"{{/if}}>
+                    <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Título</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-secondary">
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="text-center">
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-pencil-alt"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}/{{public_id}}" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{#if is_search}}
+            {{#unless novedades.length}}
+            <h4 class="alerta incorrecto">No se Encontraron Resultados Para "<strong>{{q}}</strong>"</h4>
+            {{/unless}}
+            {{/if}}
         </div>
     </div>
 </div>

@@ -73,3 +73,31 @@
     font-weight: 800;
     color: white;
 }
+.listado h3{
+    font-family: 'New Rocker', cursive;
+    color: whitesmoke;
+    text-align: start;
+    background-color: rgba(125,126,125,0.4);
+    font-weight: 300;
+}
+/* inicio agregar */
+.formagregar input,.formagregar textarea{
+    background-color: rgba(156, 0, 1,0.3);
+    color: whitesmoke;
+}
+.formagregar label{
+    color: whitesmoke;
+}
+/* fin agregar */
+/* inicio modificar */
+.modimg{
+overflow: hidden;
+width: 300px;
+height: 200px;
+display: flex;
+align-items: center;
+}
+.modimgint{
+    min-width: 300px;
+    max-height: 400px;
+}
