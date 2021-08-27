@@ -5,7 +5,7 @@ font-family: 'Pattaya', sans-serif; */
 /* inicio home */
 body{
     font-family: 'Newsreader', serif;
-    margin-top: 100px;
+    padding-top: 130px;
 }
 header{
     padding: 0;
@@ -446,6 +446,13 @@ nav ul li a.activo{
     color: #000066;
     font-family: 'Libre Baskerville', serif;
     font-weight: 800;
+}
+.divdisp{
+    display: flex;
+    justify-content: flex-end;
+}
+.formdisp{
+    width: 60%;
 }
 /* fin disponible */
 

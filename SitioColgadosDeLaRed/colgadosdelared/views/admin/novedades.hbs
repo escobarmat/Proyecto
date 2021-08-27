@@ -8,13 +8,13 @@
             </div>
         </div>
         <div class="row listado mt-5">
-            <div class="col-7">
+            <div class="col-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
                 <h3>Listado de Novedades</h3>
             </div>
-            <div class="col-2 text-end">
+            <div class="col-6 text-end col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                 <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                 <form class="d-flex formagregar" action="/admin/novedades" method="GET">
                     <input class="form-control me-2" type="search" placeholder="Buscar Novedad..." aria-label="Search" name="q" {{#if q}} value="{{q}}"{{/if}}>
                     <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
@@ -24,7 +24,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <table class="table">
+            <table class="table mt-3">
                 <thead class="table-dark">
                     <tr>
                         <th scope="col">#</th>
@@ -40,7 +40,7 @@
                         <td class="text-center">
                             <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"><i
                                     class="fa fa-pencil-alt"></i></a>
-                            <a href="/admin/novedades/eliminar/{{id}}/{{public_id}}" class="btn btn-sm btn-secondary"><i
+                            <a href="/admin/novedades/eliminar/{{id}}/{{public_id}}" class="btn btn-sm btn-secondary" onclick="return confirm('¿Estas Seguro que deseas Eliminar esta Novedad?');"><i
                                     class="fa fa-trash-alt"></i></a>
                         </td>
                     </tr>

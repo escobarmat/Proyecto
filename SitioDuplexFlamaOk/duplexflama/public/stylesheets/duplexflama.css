@@ -403,6 +403,13 @@ nav ul li a.activo{
     font-family: 'Libre Baskerville', serif;
     font-weight: 800;
 }
+.divdisp{
+    display: flex;
+    justify-content: flex-end;
+}
+.formdisp{
+    width: 30%;
+}
 /* fin disponible */
 
 /* inicio contacto */

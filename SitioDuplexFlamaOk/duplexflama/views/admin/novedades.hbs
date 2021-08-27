@@ -2,7 +2,56 @@
     <div class="row">
         <div class="col panel">
             <h1 class="tituloadmin">Penel De Administracion</h1>
-            <h3 class="text-end saludo"> Hola {{usuario}}!... <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar Sesión <i class="fa fa-sign-out-alt"></i></a></h3> 
+            <h3 class="text-end saludo"> Hola {{usuario}}!... <a href="/admin/login/logout"
+                    class="btn btn-sm btn-danger">Cerrar Sesión <i class="fa fa-sign-out-alt"></i></a></h3>
+        </div>
+        <div class="row listado mt-5">
+            <div class="col-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                <h3>Listado De Fechas Disponibles</h3>
+            </div>
+            <div class="col-6 text-end col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <form class="d-flex formagregar" action="/admin/novedades" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Fechas..." aria-label="Search"
+                        name="q" {{#if q}} value="{{q}}" {{/if}}>
+                    <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Mes</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-secondary">
+                    {{#each disponible}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{mes}}</td>
+                        <td class="text-center">
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-pencil-alt"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary"
+                                onclick="return confirm('¿Estas Seguro que deseas Eliminar esta Fecha Disponible?');"><i
+                                    class="fa fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{#if is_search}}
+            {{#unless disponible.length}}
+            <h4 class="alerta incorrecto">No se Encontraron Resultados Para "<strong>{{q}}</strong>"</h4>
+            {{/unless}}
+            {{/if}}
         </div>
     </div>
 </div>

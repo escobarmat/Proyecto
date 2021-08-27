@@ -1,0 +1,30 @@
+<div class="container mt-5 mx-auto mb-5">
+    <div class="row">
+        <div class="col-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto listado">
+            <h3>Agregar Fechas Disponibles</h3>
+            <form action="/admin/novedades/agregar" method="POST" class="formagregar">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Año</label>
+                    <input type="text" name="año" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingrese Un Año...">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Mes</label>
+                    <input type="text" name="mes" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingrese Un Mes...">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Fechas</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Ingrese las Fechas..." name="fechas"></textarea>
+                </div>
+                <div class="col-auto boton">
+                    <button type="submit" class="btn inicio mb-3">Agregar Disponible</button>
+                </div>
+            </form>
+            {{#if error}}
+            <h4 class="alerta incorrecto">{{messaje}}</h4>
+            {{/if}}
+        </div>
+    </div>
+</div>

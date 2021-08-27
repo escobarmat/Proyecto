@@ -4,7 +4,7 @@
     margin: 10px auto;
     width: 45%; 
 }
-.formadmin input{
+.formadmin input,.formagregar input,.formagregar textarea{
     background-color: rgba(153, 204, 255,0.5);
 }
 .boton{
@@ -38,12 +38,17 @@
     margin: 30px 0;
 }
 .tituloadmin{
-    margin-top: 30px;
     text-align: center;
-    margin-bottom:40px;
     color: #000066;
     font-family: 'Libre Baskerville', serif;
     font-weight: 800;  
+}
+.listado h3{
+        text-align: center;
+        background-color: rgba(240, 230, 140,0.8);
+        color: #008060;
+        font-weight: 800;
+        font-size: 25px;    
 }
 .btn-danger{
     text-align: center;

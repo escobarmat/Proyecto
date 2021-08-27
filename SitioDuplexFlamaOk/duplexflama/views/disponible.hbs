@@ -1,15 +1,23 @@
 <main class="holder disponibles">
-        <h2>Fechas Disponibles</h2>
-        <div>
-            <h3>2021</h3>
-            <h4>Enero</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, blanditiis sequi provident dignissimos necessitatibus possimus ex saepe placeat, delectus amet quis officia eum. Nihil a corrupti similique numquam quaerat hic!</p>
-        </div>
-        <hr>
-        <div>
-            <h3>2021</h3>
-            <h4>Febrero</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, blanditiis sequi provident dignissimos necessitatibus possimus ex saepe placeat, delectus amet quis officia eum. Nihil a corrupti similique numquam quaerat hic!</p>
-        </div>
-        <hr>
-    </main>
+    <h2>Fechas Disponibles</h2>
+    <div class="mb-5 mr-0 divdisp">
+        <form class="d-flex formdisp text-end" action="/disponible" method="GET">
+            <input class="form-control " type="search" placeholder="Buscar Fechas..." aria-label="Search" name="q" {{#if
+                q}} value="{{q}}" {{/if}}>
+            <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    {{#each disponible}}
+    <div>
+        <h3>{{año}}</h3>
+        <h4>{{mes}}</h4>
+        <p>{{fechas}}</p>
+    </div>
+    <hr>
+    {{/each}}
+    {{#if is_search}}
+    {{#unless disponible.length}}
+    <h4 class="alerta incorrecto text-center">No se Encontraron Resultados Para "<strong>{{q}}</strong>"</h4>
+    {{/unless}}
+    {{/if}}
+</main>

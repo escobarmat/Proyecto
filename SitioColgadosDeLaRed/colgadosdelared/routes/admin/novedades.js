@@ -7,16 +7,16 @@ var fs = require('fs-extra');
 router.get('/', async function (req, res, next) {
     // var novedades = await novedadesModel.getNovedades();
     var novedades
-    if(req.query.q===undefined){
+    if (req.query.q === undefined) {
         novedades = await novedadesModel.getNovedades();
-    }else{
+    } else {
         novedades = await novedadesModel.buscarNovedades(req.query.q);
     }
     res.render('admin/novedades', {
         layout: 'admin/layout',
         usuario: req.session.nombre,
         novedades,
-        is_search: req.query.q !==undefined,
+        is_search: req.query.q !== undefined,
         q: req.query.q
     });
 });
@@ -74,11 +74,11 @@ router.post('/agregar', async (req, res) => {
     // });
 });
 
-router.get('/modificar/:id', async(req, res, next)=>{
+router.get('/modificar/:id', async (req, res, next) => {
     let id = req.params.id;
     let novedad = await novedadesModel.getNovedadById(id);
-    res.render('admin/modificar',{
-        layout:'admin/layout',
+    res.render('admin/modificar', {
+        layout: 'admin/layout',
         novedad
     });
 });
@@ -109,7 +109,7 @@ router.post('/modificar', async (req, res, next) => {
     } catch (error) {
         console.log(error);
         res.render('admin/modificar', {
-            layout:'admin/layout',
+            layout: 'admin/layout',
             error: true, message: 'No se modifico la Novedad'
         })
     }
