@@ -44,6 +44,9 @@ header{
     height: 225px;
     overflow: hidden;
 }
+header a{
+    text-decoration: none;
+}
 header h1{
     font-family: 'Pattaya', sans-serif;
     font-size: 50px;

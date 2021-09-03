@@ -81,6 +81,9 @@ nav ul{
     -moz-box-shadow: -3px 0px 57px 0px rgba(250,255,105,1);
     box-shadow: -3px 0px 57px 0px rgba(250,255,105,1);
 }
+.movilnav a{
+    text-decoration: none;
+}
 #menu{
     right: 30px;
     position: fixed;
