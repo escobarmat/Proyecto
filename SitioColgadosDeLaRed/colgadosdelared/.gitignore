@@ -1,2 +1,5 @@
 node_modules
 .env
+colgadosdelared.sql
+config.txt
+import.bat

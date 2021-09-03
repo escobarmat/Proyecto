@@ -263,6 +263,12 @@ nav ul li a.activo{
     margin-left: 10px;
     margin-right: 1px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.noticia img{
+    min-width: 300px;
+    max-height: 400px;
 }
 .noticia img:hover{
     transform: scale(1.2);

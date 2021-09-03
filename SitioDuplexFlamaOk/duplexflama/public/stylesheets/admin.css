@@ -2,7 +2,6 @@
 .formadmin{
     padding-top: 30px;
     margin: 10px auto;
-    width: 45%; 
 }
 .formadmin input,.formagregar input,.formagregar textarea{
     background-color: rgba(153, 204, 255,0.5);
