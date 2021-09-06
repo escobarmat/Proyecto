@@ -73,6 +73,9 @@ nav{
     height: 37px;
     z-index: 200;
 }
+.homelink{
+    text-decoration: none;
+}
 #menu{
     right: 30px;
     position: fixed;

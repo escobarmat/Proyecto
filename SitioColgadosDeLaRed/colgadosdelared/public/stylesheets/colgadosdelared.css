@@ -58,6 +58,9 @@ nav{
     display: flex;
     width: 100%;
 }
+.homelink{
+    text-decoration: none;
+}
 .movilnav{
     display: none;
 }
